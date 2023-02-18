@@ -1,0 +1,229 @@
+body {
+  font-family: "Tajawal", sans-serif;
+}
+/* Start Components */
+.main-title {
+  width: fit-content;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: -7px;
+  width: 80%;
+  height: 4px;
+  background-color: rgb(226, 31, 58);
+  border-radius: 5px;
+  margin-left: -10px;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  width: 6px;
+  height: 4px;
+  background-color: white;
+  animation: dot 3s linear infinite both;
+}
+@keyframes dot {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 90%;
+  }
+}
+.main-btn {
+  margin-top: 25px;
+  border: 2px solid rgb(226, 31, 58);
+  color: rgb(226, 31, 58);
+  font-weight: 800;
+  padding: 15px 25px;
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background-color: rgb(226, 31, 58);
+  color: white;
+}
+/* End Components */
+/* Start Header  */
+header {
+  z-index: 999;
+  transition: 0.5s;
+}
+header .logo {
+  width: 70px;
+}
+header .navbar .navbar-nav li {
+  padding: 0 12px;
+}
+header .navbar .navbar-nav li a {
+  color: white;
+  transition: 0.3s;
+  font-weight: 500;
+}
+header .navbar .navbar-nav li a.active,
+header .navbar .navbar-nav li a:hover {
+  color: rgb(226, 31, 58);
+}
+header .btn-order {
+  color: rgb(226, 31, 58);
+  border: 2px solid rgb(226, 31, 58);
+  transition: 0.3s;
+  font-weight: 700;
+}
+header .btn-order:hover {
+  background-color: rgb(226, 31, 58);
+  color: white;
+}
+header.stick {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+header.stick a {
+  color: black !important;
+}
+header.stick a.active,
+header.stick a:hover {
+  color: rgb(226, 31, 58) !important;
+}
+@media (max-width: 767px) {
+  header {
+    background-color: white !important;
+  }
+  header a {
+    color: black !important;
+  }
+  .hero {
+    top: 0 !important;
+  }
+}
+/* End Header  */
+/* Start Hero */
+.hero {
+  top: -93.73px;
+  z-index: -1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(#000000e7, #ffffff71);
+  width: 100%;
+  height: 100%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/heroBg.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* End Hero */
+/* Start Products */
+.products .img-fluid {
+  transition: 0.3s;
+  animation: up-down 1s ease-in-out infinite alternate;
+}
+@keyframes up-down {
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translateY(15px);
+  }
+}
+/* End Products */
+/* Satrt Slider */
+.slider .slider-img img {
+  min-height: 350px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.slider .slider-img .owl-item.center img {
+  opacity: 1;
+}
+.slider .slider-img .owl-nav {
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+.slider .slider-img .owl-nav .owl-next,
+.slider .slider-img .owl-nav .owl-prev {
+  font-size: 50px;
+}
+.slider .slider-img .owl-nav .owl-prev {
+  margin-left: 25px;
+}
+@media (max-width: 767px) {
+  .owl-nav {
+    display: none;
+  }
+}
+/* End Slider */
+/* Start Contact */
+.contact {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.contact .row p {
+  max-width: 350px;
+  background-color: white;
+  margin: 25px auto 0;
+  padding: 25px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.contact .row p svg {
+  color: rgb(226, 31, 58);
+  font-size: 25px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .contact .row p {
+    text-align: left;
+  }
+  .contact .form {
+    padding: 20px 15px !important;
+  }
+}
+.contact .form button {
+  border: 2px solid rgb(226, 31, 58);
+  background-color: rgb(226, 31, 58);
+  color: white;
+  font-weight: bold;
+  padding: 10px 40px;
+}
+/* End Contact */
+/* Start Location */
+.location .text p:first-child {
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.location .text p:first-child svg {
+  color: rgb(226, 31, 58);
+  margin-left: 15px;
+  font-size: 25px;
+}
+/* End Location */
+/* Start Footer */
+.footer {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+.footer .logo {
+  width: 70px;
+  margin: 10px auto;
+}
+.footer .pages span a {
+  margin-top: 25px;
+  color: rgb(226, 31, 58);
+}
+/* End Footer */
